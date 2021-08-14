@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,500;2,300&display=swap');
+
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color:#fbdd74 ;
+  height: 100vh;
+  width: 100vw;
+  color:#294910;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.App{
+  margin: 0;
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+
+}
+/* 
+.title {
+  margin: 0;
+  height: 100vh;
+  width: 50vw;
+} */
+
+.container{
+  margin:0;
+  width: 50%;
+}
+
+h1 {
+  /* font-family: 'Poppins', sans-serif; */
+  margin: 0 20px !important;
+  line-height: 1.4;
+  font-weight: 800;
+  font-size: 10vw;
+  margin: 0;
+}
+
+h2{
+  /* font-family: 'Poppins', sans-serif; */
+  margin: 0 20px 20px;
+  line-height: 1.2;
+  font-weight: 300;
+  position: fixed;
+  bottom: 0;
+}
+
+.h3{
+  /* font-family: 'Poppins', sans-serif; */
+  color: white;
+  font-weight: normal;
+  z-index: 1;
+  position: fixed;
+  margin: 0 auto 20px;
+  bottom: 0;
+  text-align: center;
+  width: 50%;
+  font-size: 36px;
+}
+
+img{
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  width: 50%;
+}
+
+.display{
+  opacity: 1;
+}
+
+.hidden{
+  opacity: 0;
+}
+
+.progress-background {
+  height: 100%;
+  width: 50%;
+  background-color: gainsboro;
+  color: #294910;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.loading-bar{
+ font-weight:normal;
+ font-size: 16px;
+ display: grid;
+ grid-row-gap: 12px;
+}
+
+#image-loaded {
+  border: 1px solid #294910;
+  height: 20px;
+  width: 400px;
+}
+
+#image-loaded[value]::-webkit-progress-bar {
+ background: gainsboro;
+}
+
+#image-loaded[value]::-webkit-progress-value{
+  background-color: #294910;
+}
+
+@media (max-width: 800px) {
+  .App {
+    flex-direction: column;
+    /* height: 100%; */
+  }
+
+  .container{
+    flex-grow: 1;
+    position: relative;
+    width: 100vw;
+  }
+
+  img{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 80px;
+  }
+
+  h2{
+    font-size: 20px;
+    position: relative;
+  }
+  .h3{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .progress-background{
+    width: 100vw;
+  }
+}
